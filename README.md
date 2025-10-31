@@ -1,6 +1,8 @@
-## ecaPHP
+## ecaPHP - Estructuras de Control y Arreglos en PHP
 
-**Nombre:** Miguel Álvarez López
+**Nombre:**: Miguel Álvarez López
+**Grupo**: S5B
+**Curso**: Programación Web
 
 ## Descripción
 Proyecto para la asignatura de Programación Web que demuestra:
