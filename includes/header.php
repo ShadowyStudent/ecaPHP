@@ -15,6 +15,11 @@ if (!isset($_SESSION['visitas'])) {
 }
 $_SESSION['visitas']++;
 
+$logoFileSystem = __DIR__ . '/../img/LogoPHP.png';
+$logoWeb = 'img/LogoPHP.png';
+if (!file_exists($logoFileSystem)) {
+    $logoWeb = 'img/placeholder.png';
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -30,10 +35,17 @@ $_SESSION['visitas']++;
 <body>
 <header class="site-header py-3 bg-light border-bottom">
   <div class="container d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between">
-    <div>
-      <h1 class="h3 mb-1">ecaPHP</h1>
-      <p class="mb-0 text-muted">Estructuras de Control y Arreglos en PHP</p>
+    <div class="d-flex align-items-center">
+      <img src="<?= htmlspecialchars($logoWeb, ENT_QUOTES, 'UTF-8') ?>"
+           alt="Logo PHP"
+           class="img-fluid"
+           style="max-height:56px;">
+      <div class="ms-3">
+        <h1 class="h3 mb-0">ecaPHP</h1>
+        <p class="mb-0 text-muted small">Estructuras de Control y Arreglos en PHP</p>
+      </div>
     </div>
+
     <div class="text-end mt-2 mt-md-0">
       <small class="d-block text-muted">Visitas en esta sesión:
         <strong><?= htmlspecialchars($_SESSION['visitas'] ?? 0, ENT_QUOTES, 'UTF-8') ?></strong>
