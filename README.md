@@ -19,19 +19,18 @@ Este proyecto fue desarrollado como parte de la asignatura de Programación Web.
 
 ## 📁 Estructura del Proyecto
 
-ecaPHP/ 
-├── index.php 
-├── condicionales.php 
-├── bucles.php 
-├── arreglos.php 
-├── includes/ 
-│ ├── header.php 
-│ ├── menu.php 
-│ └── footer.php 
-├── css/ 
-│ └── styles.css 
+ecaPHP/
+├── index.php
+├── condicionales.php
+├── bucles.php
+├── arreglos.php
+├── includes/
+│ ├── header.php
+│ ├── menu.php
+│ └── footer.php
+├── css/
+│ └── styles.css
 └── img/
-
 
 ---
 
