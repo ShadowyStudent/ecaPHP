@@ -7,6 +7,10 @@ Cabecera común incluida en cada página:
 - Arranque/control de sesión y contador de visitas en sesión.
 - Garantiza que todas las páginas hereden el mismo head y recursos.
 */
+    
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 if (session_status() === PHP_SESSION_NONE) session_start();
 
